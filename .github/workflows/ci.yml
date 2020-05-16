@@ -19,8 +19,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Generate and deploy
-        run: yarn run generate
+      - name: Deploy website
+        run: yarn run deploy
         env:
           CLODUI_USERNAME: ${{ secrets.CLODUI_USERNAME }}
           CLODUI_PASSWORD: ${{ secrets.CLODUI_PASSWORD }}
